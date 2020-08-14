@@ -32,7 +32,7 @@ def introduction():
 class Block:
     def __init__(self, previous_transactions, timestamp, data):
         self.previous_transactions = self.previous_transactions()
-        self.timestamp = timestamp
+        self.timestamp = datetime.datetime.now()
         self.data = data
         self.cryptocurrency = cryptocurrency
         # The hash converter
@@ -78,14 +78,44 @@ class Block:
                             # Type in the code, today
                             pass
                     elif edit == "birthday":
-                        # Type in the code, today
+                        DMY = input("Year, month or day: ")
+                        if DMY == "year" or DMY == "Year" or DMY == "YEAR":
+                            yearEdit = int(input("Type in your updated year: "))
+                            userFile = open("identity.txt", "w+")
+                            userFile.read("identity.txt", "r")
+                            for userFile in range(True):
+                                return userFile.write(f"{month}/{date}/{yearEdit}")
+                        elif DMY == "Month" or DMY == "month" or DMY == "YEAR":
+                            monthEdit = input("Type in your updated month: ")
+                            userFile = open("identity.txt", "w+")
+                            userFile.read("identity.txt", "r")
+                            for userFile in range(True):
+                                return userFile.write(f"{monthEdit}/{date}/{year}")
+                        elif DMY == "Date" or DMY == "DATE" or DMY == "date":
+                            dateEdit = int(input("Type in your updated date: "))
+                            userFile = open("identity.txt", "w+")
+                            userFile.read("identity.txt", "r")
+                            for userFile in range(True):
+                                return userFile.write(f"{month}/{dateEdit}/{year}")
+                    elif edit == "transaction amount" or edit == "virtual-money":
+                        # Type in the code, today 
                         pass
                     else:
-                        return None
+                        return False
         def previous_transactions(self):
             # Type in the code...
             pass
 
         def open_file(self):
+            # Type in the code...
+            pass
+# In addition, another class will be implemented as a summary to previous class
+class Blockchain(Block):
+    def __init__(self, data):
+        self.data = data
+        # The function variables
+        self.hashEncryption = self.hashEncryption()
+        # A summary function, watch this video as a reminder to summarize "https://www.youtube.com/watch?v=b81Ib_oYbFk"
+        def hashEncryption(self):
             # Type in the code...
             pass
