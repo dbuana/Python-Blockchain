@@ -115,7 +115,6 @@ class Blockchain(Block):
         self.data = data
         # The function variables
         self.hashEncryption = self.hashEncryption()
-        # A summary function, watch this video as a reminder to summarize "https://www.youtube.com/watch?v=b81Ib_oYbFk"
         def hashEncryption(self):
             # Type in the code...
             pass
