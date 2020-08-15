@@ -6,3 +6,5 @@ Feel free to create pull-request.
 Attachments: hashlib and datetime, should be set as a default module in Python3.
 
 Language: Python3
+
+Note: For feedback contact me on Instagram "@dxv1an_b" and we can have a discussion. 
